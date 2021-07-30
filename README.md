@@ -6,6 +6,10 @@ Premissas
 3. Conta criada na AWS
 4. AWS CLI (https://aws.amazon.com/pt/cli/)
 
+Documentação de acordo com o provedor escolhido
+
+https://registry.terraform.io/
+
 Passos para criar o usuário na AWS
 
 - Entrar na AWS -> 
