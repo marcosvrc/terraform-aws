@@ -1,0 +1,9 @@
+Comandos
+
+terraform apply -auto-approve #Já aprova o plano sem perguntar
+terraform show #exibe as informações já configuradas
+terraform console #console visualizar as estruturas isoladamente ou obter informações de um campo específico
+
+ - Importando um bucket que não está sendo gerenciado pelo terraform
+
+ terraform import aws_s3_bucket.bucket nome_bucket

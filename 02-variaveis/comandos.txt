@@ -1,0 +1,27 @@
+
+Criando uma instância EC2
+
+Procurar por EC2
+Clicar em Instances
+Clicar em Launch Instances
+Copiar o nome de uma máquina virtual -> ami-0443305dabd4be2bc
+
+Comandos
+
+terraform init
+terraform plan
+terraform apply -auto-approve
+
+- Forma de passar as variáveis
+
+1. Retirando o valor default. Ao rodar o plan o terraform irá solicitar
+2. Usando TF_VAR_{variavel} terraform plan
+3. terraform plan -var="{variavel=valor}" 
+
+ - Usando um arquivo especifico de configuração
+
+terraform plan -var-file="xxxx.tfvars"
+
+ATENCAO: verificar a precedencia dos arquivos (seção Variable Definition Precedence)
+https://www.terraform.io/docs/language/values/variables.html
+
