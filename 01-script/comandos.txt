@@ -1,0 +1,32 @@
+Criando um Bucket por terraform aws
+
+terraform -h (help)
+
+Depois de criado o script, entrar no diretório e rodar o comando
+
+terraform init
+terraform plan -> mostra os passos que serão executados na aws
+terraform apply 
+  Digitar Yes
+
+
+Criando Variáveis de Ambiente AWS
+
+terraform init
+AWS_ACCESS_KEY_ID=[colocar sua key] AWS_SECRET_ACCESS_KEY=[colocar sua key] terraform apply
+
+Alterando um recurso já criado
+
+terraform validate (verifica se o script se atende aos padrões)
+terraform fmt (formata o json)
+terraform plan -out="tfplan.out"
+terraform apply "tfplan.out"
+
+Obs.: Se for alterar o nome do bucket, o terraform vai deletar o antigo e recriar um novo
+
+Destruir o recurso já criado
+
+terraform destroy
+
+Criando uma instância ES2
+
